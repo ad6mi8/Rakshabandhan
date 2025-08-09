@@ -1,0 +1,109 @@
+body {
+    background: linear-gradient(135deg, #ff007f, #ffcc00);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#surprise-btn {
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#surprise-btn:hover {
+    transform: scale(1.1);
+    background-color: #ff8fd4;
+}
+
+.header-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    animation: slideDown 1s ease;
+}
+
+.footer-text {
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.welcome-animation .rakhi {
+    width: 150px;
+    animation: spin 5s linear infinite;
+}
+
+.sisters .sister-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.sisters .sister-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.message {
+    display: none;
+    font-style: italic;
+}
+
+.quote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    max-width: 800px;
+    line-height: 1.5;
+    animation: fadeInUp 1.5s ease;
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
