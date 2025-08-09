@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisters Love</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="py-4 text-center header-text">
+        Happy Raksha Bandhan 💖
+    </header>
+    <div class="welcome-animation">
+        <img src="image/Screenshot_2025-08-09_111315-removebg-preview.png" alt="Rakhi" class="rakhi">
+    </div>
+
+    <section class="sisters">
+        <div class="sister-card" onclick="showMessage('msg1')">
+            <h2>Jyoti Mishra</h2>
+            <p id="msg1" class="message">Dear Jyoti, you are my guiding star and forever friend. Love you always!</p>
+        </div>
+        <div class="sister-card" onclick="showMessage('msg2')">
+            <h2>Preety Mishra</h2>
+            <p id="msg2" class="message">Preety, you bring light and laughter into my life every day. Happy Raksha Bandhan!</p>
+        </div>
+        <div class="sister-card" onclick="showMessage('msg3')">
+            <h2>Priya Mishra</h2>
+            <p id="msg3" class="message">Priya, your love and care are a blessing I cherish forever.</p>
+        </div>
+    </section>
+    <!-- Quote Section -->
+    <main class="flex-fill d-flex justify-content-center align-items-center text-center px-3">
+        <div class="quote">
+            To my dearest sisters — Jyoti, Preety, and Priya, You are not just my sisters, but my best friends, my biggest supporters, and the ones who fill my life with endless joy. On this Raksha Bandhan, I want you to know that no matter where life takes us, my
+            love, care, and prayers will always be with you. You are my pride, my happiness, and my forever bond. Happy Raksha Bandhan to the three most beautiful souls in my life. ❤️ </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 footer-text mt-auto">
+        Made with ❤️ for my beloved sister
+    </footer>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/festival of lights 🪔 indian lofi beats (online-video-cutter.com).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
